@@ -13,7 +13,7 @@
 		CA4F2DCB28D831BB00DB212F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4F2DC928D831BB00DB212F /* Main.storyboard */; };
 		CA4F2DCD28D831BC00DB212F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4F2DCC28D831BC00DB212F /* Assets.xcassets */; };
 		CA4F2DD028D831BC00DB212F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4F2DCE28D831BC00DB212F /* LaunchScreen.storyboard */; };
-		CA4F2DDD28D848D400DB212F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F2DDC28D848D400DB212F /* MainModel.swift */; };
+		CA4F2DDD28D848D400DB212F /* InsultGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F2DDC28D848D400DB212F /* InsultGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		CA4F2DCC28D831BC00DB212F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4F2DCF28D831BC00DB212F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA4F2DD128D831BC00DB212F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA4F2DDC28D848D400DB212F /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		CA4F2DDC28D848D400DB212F /* InsultGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsultGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		CA4F2DD828D847E200DB212F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CA4F2DDC28D848D400DB212F /* MainModel.swift */,
+				CA4F2DDC28D848D400DB212F /* InsultGenerator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4F2DDD28D848D400DB212F /* MainModel.swift in Sources */,
+				CA4F2DDD28D848D400DB212F /* InsultGenerator.swift in Sources */,
 				CA4F2DC828D831BB00DB212F /* MainViewController.swift in Sources */,
 				CA4F2DC428D831BB00DB212F /* AppDelegate.swift in Sources */,
 				CA4F2DC628D831BB00DB212F /* SceneDelegate.swift in Sources */,

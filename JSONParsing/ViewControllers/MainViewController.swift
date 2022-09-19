@@ -9,31 +9,38 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
+    //MARK: - Override functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fetchMainModel()
-
         
     }
 
+    //MARK: - Private Functions
+    
     private func fetchMainModel() {
         guard let url = URL(string: "https://evilinsult.com/generate_insult.php?lang=en&type=json")
         else { return }
-
-        URLSession.shared.dataTask(with: url) {
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
-                print()
+                print(error?.localizedDescription ?? "No error")
                 return
             }
-        }
-        let session = URLSession(configuration: .default)
+            
+            let jsonDecoder = JSONDecoder()
+            
+            do {
+                let insultGenerator = try jsonDecoder.decode(InsultGenerator.self, from: data)
+                print(insultGenerator)
+            } catch {
+                print(error.localizedDescription)
+            }
+                        
+        }.resume()
         
-        let task = session.dataTask(with: url)
     }
 
-    task.resume()
-    
 }
-
